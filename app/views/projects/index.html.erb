@@ -1,0 +1,18 @@
+<h1>Projects : </h1>
+<div id="searched_projects">
+  <table id="searched_projects_table">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Owner</th>
+    </tr>
+
+  <% @projects.each do |project| %>
+    <tr>
+      <td><%= link_to project.name, project_path(project.id) %></td>
+      <td><%= project.description %></td>
+      <td><%= project.owner.name %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>

@@ -1,0 +1,56 @@
+// Place all the styles related to the session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.password_div label {
+	padding-right : 35px;
+}
+fieldset {
+	width : 300px;
+}
+
+#content{
+    float:left;
+    width : 700px;
+    height : 300px;
+    margin: 40px 0px 0px 70px;
+	h1{
+	  font-size:24px;
+	  line-height:100%;
+	  margin:15px 0px 5px 0px;
+	  padding:0px;
+	}
+	p{
+	  margin:4px 0px 10px 0px;
+	  line-height : 120%;
+	  font-size:18px;
+	}
+	#left {
+	  float:left;
+	  width : 350px;
+	}
+	#right {
+      margin:50px 0px 0px 70px;
+	  width : 250px;
+	  float:right;
+	  p {
+	  text-align : center;
+	  font-size : 24px;
+	  }
+	}
+}
+#form_div{
+    float:right;
+	margin:130px 100px 0px 0px;
+	font-size : 15px;
+	#new_user_div {
+	  font-size:15px;
+	  a {
+	  margin-left:2px;
+	  &:hover {
+      color: cadetblue;
+      } 
+      }
+	}
+	
+}
+

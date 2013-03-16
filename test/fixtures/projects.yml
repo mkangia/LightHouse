@@ -1,0 +1,8 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+test_project:
+  id: 1
+  name: MyProject
+  description: MyText
+  user_id: 1
+

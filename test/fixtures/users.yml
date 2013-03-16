@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+test_user1:
+  id : 1
+  name: puppy
+  email: MyString
+  password_digest: MyString
+
+test_user2:
+  id: 2
+  name: cat
+  email: valid@valid.com
+  password_digest: MyString

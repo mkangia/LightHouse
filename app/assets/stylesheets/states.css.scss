@@ -1,0 +1,23 @@
+// Place all the styles related to the states controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#states_table {
+	width : 400px;
+	margin-left : 10%;
+	border : 1px solid black;
+	border-right : 0px;
+	border-bottom : 0px;
+	td {
+	font-size:14px;
+	border : 1px solid black;
+	border-left : 0px;
+	border-top : 0px;
+	text-align : center;
+	a {
+	margin:0px 10px 0px 10px;
+	}
+	b {
+	  font-size : 25px;
+	}
+	}
+}

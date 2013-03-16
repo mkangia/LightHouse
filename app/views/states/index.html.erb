@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div id = "states" >
+  <h1><%= @project.name %></h1>
+	<% unless @states[0].nil? %>
+		<table id="states_table">
+			<tr>
+				<td><b>Title</b></td>
+				<td><b>Open</b></td>
+				<td><b>Action</b></td>
+			</tr>
+			
+			<% @states.each do |state| %><br/>
+		  <tr>
+		  	<td><%= state.title %></td>
+		  	<td><%= state.open %></td>
+		  	<td><%= link_to 'edit', edit_state_path(state) %></t><%= link_to 'remove', state_path(state), :method => :delete %></td>
+			</tr>
+			<% end %>
+		  
+	  </table>
+	<%end %>
+	<%= link_to 'add state', { :controller => :states, :action => :new, :project_id => @project.id} %>
+</div>

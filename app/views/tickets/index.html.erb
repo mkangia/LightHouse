@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<h1>Listing tickets</h1>
+<div id="searched_tickets">
+<table id="searched_tickets_table">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Created By</th>
+    <th>Assigned To</th>
+    <th>Current State</th>
+  </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= link_to ticket.title, ticket_path(ticket.id) %></td>
+    <td><%= ticket.description %></td>
+    <td><%= ticket.creator.name %></td>
+    <td><%= User.find(ticket.assigned_to).name %></td>
+    <td><%= State.find(ticket.state).title %>
+  </tr>
+<% end %>
+</table>
+</div>

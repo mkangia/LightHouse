@@ -1,0 +1,88 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#new_project{
+	width : 350px;
+	.actions {
+	  float:right;
+	  margin-right:9px;
+	}
+}
+div {
+	margin-top : 10px;
+}
+#pro_desc {
+	label,p {
+	  float:left;
+	}
+	textarea {
+	  margin-left : 20px;
+	}
+}
+#emails {
+	width : 250px;
+}
+#project_description_div {
+    float :left;
+	height : 1000px;
+	width : 65%;
+	#head {
+	text-align:center;
+	a {
+	  float:right;
+	}
+	}
+	#project_content {
+	  width : 80%;
+	  border-top: 1px solid black;
+	  border-left:1px solid black;
+	  margin-left:10%;
+	  margin-top : 20px;
+	  td {
+	   font-size:14px;
+	   text-align:center;
+	   border: 1px solid black;
+	   border-top: 0px;
+	   border-left :0px;
+	   padding : 5px;
+	  }
+	}
+	#edit_and_email {
+	  margin-left:10%;
+	}
+}
+#sidebar {
+    float:right;
+	width : 34%;
+	height : 1000px;
+	border : 2px dotted black;
+	form.button_to input {
+	margin-left:10%;
+	width : 80%;
+	height : 30px;
+	}
+	a {
+	    color : whitesmoke;
+	    font-size:18px;
+	  }
+	#addticket {
+	  font-size : 20px;
+
+	}
+}
+#searched_projects {
+	#searched_projects_table {
+	  width : 80% ;
+	  border : 1px solid black;
+	  tr {
+	    border : 1px solid black;
+	    td {
+	      border : 1px solid black;
+	      border-left : 0px;
+	      border-bottom : 0px;
+	      text-align : center;
+	      width : 200px;
+	    }
+	  }
+	}
+}

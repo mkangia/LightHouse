@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+<table id = "ticket_content">
+  <h1><%= @ticket.title %></h1>
+  <td class = "title"><b>Description</b></td>
+  <td><%= @ticket.description %></td>
+  </tr>
+<br/>
+<tr>
+  <td class = "title">
+  <b>Created By</b></td>
+  <td class = "content"><%= @creator.name %>
+</td>
+  </tr>
+
+<tr>
+  <td class = "title">
+  <b>Project</b></td>
+  <td class = "content"><%= @project.name %>
+</td>
+  </tr>
+
+<tr>
+  <td class = "title">
+  <b>Assigned to</b></td>
+  <td class = "content"><%= @assigned_to.name %>
+</td>
+  </tr>
+
+<tr>
+  <td class = "title">
+  <b>State</b></td>
+  <td class = "content"><%= (@state.title) %>(<%= (@state.open ? 'open' : 'close') %>)
+</td>
+  </tr>
+</table>
+
+
+<%= link_to 'Edit Ticket', { :controller => :tickets, :action => :edit, :project_id => @ticket.project_id } %>

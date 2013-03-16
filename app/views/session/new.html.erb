@@ -1,0 +1,45 @@
+<div id="front_page">
+	
+	<div id="content">
+		<div id= "left">
+		  <h1>Beautiful and simple issue tracking system</h1>
+		  <p>Collaborate effortlessly on projects. Whether you’re a team of 5 or studio of 50, Lighthouse will help you keep track of your project development with ease.</p>
+		
+		  <h1>More fun, More functions</h1>
+		  <p>Cut the fat out of your workflow and stay focused on what’s important.</p>
+
+		  <h1>Consolidate your projects</h1>
+		  <p>You can see the status of all your projects in a simple overview and follow along with feeds.</p> 
+	  </div>
+
+	  <div id= "right">
+      <p>Lighthouse will simplify your workflow so you can do the job you were hired to do. <br><br>Try it for free.</p>
+	  </div>
+	</div>
+	<div id = "form_div" >
+		<%= form_tag do %>
+		  <fieldset>
+		    <legend>
+		      Please Log In
+		    </legend>
+
+		    <div class = "username_div" >
+		    	<%= label_tag :name, "Username:" %>
+		    	<%= text_field_tag :name, params[:name] %>
+		    </div>
+
+		    <div class = "password_div" >
+		    	<%= label_tag :password, "Pass:" %>
+		    	<%= password_field_tag :password, params[:password] %>
+		    </div>
+
+		    <div class = "submit_div">
+		    	<%= submit_tag 'LogIn' %>
+		    </div>
+		  </fieldset>
+		<% end %>
+		<div id = "new_user_div" >
+		  <%= link_to 'Try Lighthouse', new_user_path %>
+		</div>
+	</div>
+<div>

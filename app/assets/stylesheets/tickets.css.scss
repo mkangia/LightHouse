@@ -1,0 +1,50 @@
+// Place all the styles related to the tickets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#notice {
+	font-size : 14px;
+}
+table tr td{
+	font-size:14px;
+}
+#searched_tickets {
+	#searched_tickets_table {
+	  border : 1px solid black;
+	  tr {
+	    border : 1px solid black;
+	    td {
+
+	      border : 1px solid black;
+	      border-left : 0px;
+	      border-bottom : 0px;
+	      text-align : center;
+	      width : 200px;
+	    }
+	  }
+	}
+}
+#ticket_content {
+	width : 1000px;
+	td {
+	  font-size : 14px;
+	}
+	.title {
+	width : 120px;
+	}
+	.content {
+	width : 800px;
+	}
+}
+#ticket_state {
+	margin-left : 94px;
+}
+#ticket_assigned_to {
+	margin-left : 67px;
+}
+.actions input {
+	margin-top : 5px;
+}
+h1 {
+	padding :0px;
+	margin : 0px;
+}

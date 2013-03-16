@@ -1,0 +1,41 @@
+
+<p id="notice"><%= notice %></p>
+<div id="display">
+  <% unless @projects_owned[0].nil? %>
+    <h2>Projects Owned: </h2>
+    <% @projects_owned.each do |project| %>
+      <p><%= link_to "#{project.name}", project_path(project.id) %></p>
+    <% end %>
+  <%end%>
+  
+  <% unless @projects_assigned[0].nil? %>
+    <h2>Projects Assigned: </h2>
+    <% @projects_assigned.each do |project| %>
+      <p><%= link_to "#{project.name}", project_path(project.id) %></p>
+    <% end %>
+  <%end%>
+
+</div>
+<div id="links">
+	<%= button_to 'Create new project', new_project_path, :method => :get %> 
+  <div id = "search_by_ticket">
+    <%= form_tag tickets_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search_ticket, params[:search_ticket] %>
+        <%= select_tag :search_by, "<option>all</all><option>title</option><option>description</option>><option>project</option>".html_safe %>
+        <%= submit_tag "Search Tickets", :name => nil %>
+      </p>
+    <% end %>
+  </div>
+
+  <div id="tickets">
+  <% if @tickets_assigned %>
+    <h2>Tickets assigned to you</h2>
+    <ul class="tickets_assigned">
+    <% @tickets_assigned.each do |ticket| %>
+    <li><%= link_to ticket.title, ticket_path(ticket.id) %></li>
+    <% end %>
+  <% end %>
+  </div>
+  
+</div>

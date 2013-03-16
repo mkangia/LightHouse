@@ -1,0 +1,804 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:34:41', '2013-03-11 12:34:41', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:34:41', '2013-03-11 12:34:41', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:34:41', '2013-03-11 12:34:41', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:34:41', '2013-03-11 12:34:41', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, '2013-03-11 12:34:41', '2013-03-11 12:34:41', 980190962)[0m
+Mysql2::Error: Unknown column 'owner_id' in 'field list': INSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, '2013-03-11 12:34:41', '2013-03-11 12:34:41', 980190962)
+  [1m[35m (71.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:35:14', '2013-03-11 12:35:14', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:35:14', '2013-03-11 12:35:14', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:35:14', '2013-03-11 12:35:14', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:35:14', '2013-03-11 12:35:14', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, '2013-03-11 12:35:14', '2013-03-11 12:35:14', 980190962)[0m
+Mysql2::Error: Unknown column 'owner_id' in 'field list': INSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, '2013-03-11 12:35:14', '2013-03-11 12:35:14', 980190962)
+  [1m[35m (81.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:36:16', '2013-03-11 12:36:16', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:36:16', '2013-03-11 12:36:16', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:36:16', '2013-03-11 12:36:16', 298486374)
+  [1m[36m (78.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:37:04', '2013-03-11 12:37:04', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:37:04', '2013-03-11 12:37:04', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:37:04', '2013-03-11 12:37:04', 298486374)
+  [1m[36m (98.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:37:42', '2013-03-11 12:37:42', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:37:42', '2013-03-11 12:37:42', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:37:42', '2013-03-11 12:37:42', 298486374)
+  [1m[36m (76.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:38:14', '2013-03-11 12:38:14', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:38:14', '2013-03-11 12:38:14', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:38:14', '2013-03-11 12:38:14', 298486374)
+  [1m[36m (79.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:42:08', '2013-03-11 12:42:08', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:42:08', '2013-03-11 12:42:08', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:42:08', '2013-03-11 12:42:08', 298486374)
+  [1m[36m (79.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:42:48', '2013-03-11 12:42:48', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:42:48', '2013-03-11 12:42:48', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:42:49', '2013-03-11 12:42:49', 298486374)
+  [1m[36m (90.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:45:55', '2013-03-11 12:45:55', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:45:55', '2013-03-11 12:45:55', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:45:55', '2013-03-11 12:45:55', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:45:55', '2013-03-11 12:45:55', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:45:55', '2013-03-11 12:45:55', 871498793)[0m
+Mysql2::Error: Unknown column 'owner_id' in 'field list': INSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:45:55', '2013-03-11 12:45:55', 871498793)
+  [1m[35m (79.9ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:45:56', '2013-03-11 12:45:56', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:45:56', '2013-03-11 12:45:56', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `tickets`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:45:56', '2013-03-11 12:45:56', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:45:56', '2013-03-11 12:45:56', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:45:56', '2013-03-11 12:45:56', 871498793)
+Mysql2::Error: Unknown column 'owner_id' in 'field list': INSERT INTO `projects` (`name`, `description`, `owner_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:45:56', '2013-03-11 12:45:56', 871498793)
+  [1m[36m (54.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:46:15', '2013-03-11 12:46:15', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:46:15', '2013-03-11 12:46:15', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:46:15', '2013-03-11 12:46:15', 298486374)[0m
+  [1m[35m (55.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:47:33', '2013-03-11 12:47:33', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:47:33', '2013-03-11 12:47:33', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:47:33', '2013-03-11 12:47:33', 298486374)[0m
+  [1m[35m (82.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:49:41', '2013-03-11 12:49:41', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:49:41', '2013-03-11 12:49:41', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:49:41', '2013-03-11 12:49:41', 298486374)[0m
+  [1m[35m (89.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:50:43', '2013-03-11 12:50:43', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:50:43', '2013-03-11 12:50:43', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:50:43', '2013-03-11 12:50:43', 298486374)[0m
+  [1m[35m (97.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:52:22', '2013-03-11 12:52:22', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:52:22', '2013-03-11 12:52:22', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 4, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:52:22', '2013-03-11 12:52:22', 298486374)[0m
+  [1m[35m (73.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:54:10', '2013-03-11 12:54:10', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:54:10', '2013-03-11 12:54:10', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 298486374, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:54:10', '2013-03-11 12:54:10', 298486374)[0m
+  [1m[35m (94.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:54:24', '2013-03-11 12:54:24', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:54:24', '2013-03-11 12:54:24', 298486374)
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 298486374, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:54:25', '2013-03-11 12:54:25', 298486374)[0m
+  [1m[35m (71.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 298486374 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'MyString', 'MyString', 'MyString', '2013-03-11 12:55:29', '2013-03-11 12:55:29')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:55:29', '2013-03-11 12:55:29', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:55:30', '2013-03-11 12:55:30', 298486374)[0m
+  [1m[35m (94.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:55:49', '2013-03-11 12:55:49', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:55:49', '2013-03-11 12:55:49', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:55:49', '2013-03-11 12:55:49', 298486374)[0m
+  [1m[35m (69.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 12:56:54', '2013-03-11 12:56:54')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 12:56:54', '2013-03-11 12:56:54', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 12:56:54', '2013-03-11 12:56:54', 298486374)[0m
+  [1m[35m (78.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:01:03', '2013-03-11 13:01:03')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', '2013-03-11 13:01:03', '2013-03-11 13:01:03', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 1, 0, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `projects` (`name`, `description`, `user_id`, `created_at`, `updated_at`, `id`) VALUES ('MyProject', 'MyText', 1, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 871498793)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `projects_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `states`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:01:03', '2013-03-11 13:01:03', 298486374)[0m
+  [1m[35m (87.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 871498793 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:04:11', '2013-03-11 13:04:11')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:04:11', '2013-03-11 13:04:11')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:04:11', '2013-03-11 13:04:11', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:04:11', '2013-03-11 13:04:11')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:04:11', '2013-03-11 13:04:11', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:04:11', '2013-03-11 13:04:11', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:04:11', '2013-03-11 13:04:11', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:04:11', '2013-03-11 13:04:11', 298486374)
+  [1m[36m (87.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:06:13', '2013-03-11 13:06:13')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:06:13', '2013-03-11 13:06:13')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:06:13', '2013-03-11 13:06:13', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:06:13', '2013-03-11 13:06:13')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:06:13', '2013-03-11 13:06:13', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:06:13', '2013-03-11 13:06:13', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:06:13', '2013-03-11 13:06:13', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:06:13', '2013-03-11 13:06:13', 298486374)
+  [1m[36m (86.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.3ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (10, 'puppy', 'MyString', 'MyString', '2013-03-11 13:08:32', '2013-03-11 13:08:32')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:08:32', '2013-03-11 13:08:32')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:08:32', '2013-03-11 13:08:32', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:08:32', '2013-03-11 13:08:32')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:08:32', '2013-03-11 13:08:32', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:08:32', '2013-03-11 13:08:32', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:08:32', '2013-03-11 13:08:32', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:08:32', '2013-03-11 13:08:32', 298486374)
+  [1m[36m (105.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.4ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:17:08', '2013-03-11 13:17:08')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:17:08', '2013-03-11 13:17:08')
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:17:08', '2013-03-11 13:17:08', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:17:08', '2013-03-11 13:17:08')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:17:08', '2013-03-11 13:17:08', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:17:08', '2013-03-11 13:17:08', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:17:08', '2013-03-11 13:17:08', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:17:08', '2013-03-11 13:17:08', 298486374)
+  [1m[36m (93.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.5ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:18:59', '2013-03-11 13:18:59')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:18:59', '2013-03-11 13:18:59')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:18:59', '2013-03-11 13:18:59', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:18:59', '2013-03-11 13:18:59')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:18:59', '2013-03-11 13:18:59', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:18:59', '2013-03-11 13:18:59', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:18:59', '2013-03-11 13:18:59', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:18:59', '2013-03-11 13:18:59', 298486374)
+  [1m[36m (94.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.5ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'MyString' AND `users`.`id` != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'mk@mk.com', 'MyString', '2013-03-11 13:19:34', '2013-03-11 13:19:34')[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'MyString', 'MyString', '2013-03-11 13:19:34', '2013-03-11 13:19:34')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:19:34', '2013-03-11 13:19:34', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:19:34', '2013-03-11 13:19:34')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:19:34', '2013-03-11 13:19:34', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:19:34', '2013-03-11 13:19:34', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:19:34', '2013-03-11 13:19:34', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:19:34', '2013-03-11 13:19:34', 298486374)
+  [1m[36m (103.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.3ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'mk@mk.com' AND `users`.`id` != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-11 13:20:34', '2013-03-11 13:20:34')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'valid@valid.com', 'MyString', '2013-03-11 13:20:34', '2013-03-11 13:20:34')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-11 13:20:34', '2013-03-11 13:20:34', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-11 13:20:34', '2013-03-11 13:20:34')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:20:34', '2013-03-11 13:20:34', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-11 13:20:34', '2013-03-11 13:20:34', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:20:34', '2013-03-11 13:20:34', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-11 13:20:34', '2013-03-11 13:20:34', 298486374)
+  [1m[36m (129.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.5ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'MyString' AND `users`.`id` != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'valid@valid.com' AND `users`.`id` != 2) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (1, 'puppy', 'MyString', 'MyString', '2013-03-12 05:46:17', '2013-03-12 05:46:17')[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `users` (`id`, `name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES (2, 'cat', 'valid@valid.com', 'MyString', '2013-03-12 05:46:17', '2013-03-12 05:46:17')
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `tickets`[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `tickets` (`title`, `description`, `user_id`, `project_id`, `assigned_to`, `state`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyText', 1, 1, 2, 0, '2013-03-12 05:46:17', '2013-03-12 05:46:17', 7973517)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM `projects`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects` (`id`, `name`, `description`, `user_id`, `created_at`, `updated_at`) VALUES (1, 'MyProject', 'MyText', 1, '2013-03-12 05:46:17', '2013-03-12 05:46:17')
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM `projects_users`[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-12 05:46:17', '2013-03-12 05:46:17', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `projects_users` (`user_id`, `project_id`, `created_at`, `updated_at`, `id`) VALUES (NULL, 1, '2013-03-12 05:46:17', '2013-03-12 05:46:17', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `states`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-12 05:46:17', '2013-03-12 05:46:17', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `states` (`project_id`, `title`, `open`, `created_at`, `updated_at`, `id`) VALUES (1, 'MyString', 0, '2013-03-12 05:46:17', '2013-03-12 05:46:17', 298486374)
+  [1m[36m (68.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT `projects`.* FROM `projects` WHERE `projects`.`id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mTicket Load (0.3ms)[0m  SELECT `tickets`.* FROM `tickets` WHERE `tickets`.`id` = 7973517 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'MyString' AND `users`.`id` != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE (`users`.`email` = BINARY 'valid@valid.com' AND `users`.`id` != 2) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

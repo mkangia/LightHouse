@@ -1,0 +1,52 @@
+
+---
+users:
+  columns:
+  - id
+  - name
+  - email
+  - password_digest
+  - created_at
+  - updated_at
+  records: 
+  - - 4
+    - manish
+    - contact.manishkangia@gmail.com
+    - manish
+    - '2013-03-06 08:04:51.068600'
+    - '2013-03-06 08:04:51.068600'
+  - - 5
+    - akhil
+    - akhil@gmail.com
+    - akhil
+    - '2013-03-06 13:02:08.869312'
+    - '2013-03-06 13:02:08.869312'
+
+---
+projects:
+  columns:
+  - id
+  - name
+  - description
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 18
+    - vinsol app
+    - this is it.
+    - 4
+    - '2013-03-07 06:28:13.182318'
+    - '2013-03-07 06:28:13.182318'
+  - - 19
+    - vinsol another app
+    - this is the second app.
+    - 4
+    - '2013-03-07 07:16:00.940952'
+    - '2013-03-07 07:16:00.940952'
+  - - 20
+    - Demo Project
+    - This is a demo project.
+    - 4
+    - '2013-03-07 09:32:45.138652'
+    - '2013-03-07 09:32:45.138652'
