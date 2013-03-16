@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   validates :email ,:uniqueness => true, :format => { :with => /^[a-zA-z0-9]+[\w\.]*\w+@\w+\.[a-zA-Z]{2,3}$/i }
 
   def password_match(password_entered)
-  	password_digest.eql? password_entered
+    password_digest.eql? password_entered
   end
  
   has_many :projects_users
