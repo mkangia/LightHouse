@@ -16,23 +16,23 @@
 
   <% if session[:user_id] %>
 
-	  <div id= "logout">
-	    <label id="useremail"><%= User.find(session[:user_id]).email %></label>
-	    <div id = "header_links" >
-	      <%= link_to 'Account', edit_user_path(session[:user_id]) %>
-	      <%= link_to 'Home' , user_path(session[:user_id]) %>
-	      <%= link_to 'Logout', logout_path, :method => :delete %>
-	    </div>
-	  </div>
+    <div id= "logout">
+      <label id="useremail"><%= User.find(session[:user_id]).email %></label>
+      <div id = "header_links" >
+        <%= link_to 'Account', edit_user_path(session[:user_id]) %>
+        <%= link_to 'Home' , user_path(session[:user_id]) %>
+        <%= link_to 'Logout', logout_path, :method => :delete %>
+      </div>
+    </div>
 
-	  <div id = "search_by_project">
-	    <%= form_tag projects_path, :method => 'get' do %>
-	      <p>
-	        <%= text_field_tag :search, params[:search] %>
-	        <%= submit_tag "Project", :name => nil %>
-	      </p>
-	    <% end %>
-	  </div>
+    <div id = "search_by_project">
+      <%= form_tag projects_path, :method => 'get' do %>
+        <p>
+          <%= text_field_tag :search, params[:search] %>
+          <%= submit_tag "Project", :name => nil %>
+        </p>
+      <% end %>
+    </div>
 
   <% end %>
   </div>
