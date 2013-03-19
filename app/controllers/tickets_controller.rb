@@ -63,7 +63,12 @@ class TicketsController < ApplicationController
     @project = Project.find(@ticket.project_id)
     @states_for_ticket = @project.states 
     @user_id = @ticket.user_id
-
+    if params[:ticket]["description"].class == ActionDispatch::Http::UploadedFile
+       logger.info("now inside if")
+       logger.info(params[:ticket][:description])
+       DataFile.save(params[:ticket][:description])
+       params[:ticket]["description"] = params[:ticket]["description"].original_filename
+    end
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
         @ticket.update_attributes(:user_id => @user_id)
@@ -84,5 +89,10 @@ class TicketsController < ApplicationController
       format.html { redirect_to tickets_url }
       format.json { head :no_content }
     end
+  end
+
+  def file_upload(file_params)
+    @user = User.find(session[:user_id])
+    
   end
 end

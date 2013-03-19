@@ -13,7 +13,13 @@
 <% @tickets.each do |ticket| %>
   <tr>
     <td><%= link_to ticket.title, ticket_path(ticket.id) %></td>
-    <td><%= ticket.description %></td>
+    <td>
+      <% if ticket.description.to_s.include('jpg') %>
+      yoo
+      <% else %>
+      <%= ticket.description %>
+      <% end %>
+    </td>
     <td><%= ticket.creator.name %></td>
     <td><%= User.find(ticket.assigned_to).name %></td>
     <td><%= State.find(ticket.state).title %>

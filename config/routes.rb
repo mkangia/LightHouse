@@ -2,6 +2,9 @@ LightHouse::Application.routes.draw do
 
   resources :users
   
+  controller :tickets do
+    post 'fileUpload' => :file_upload
+  end
 
   controller :session do
     get 'login' => :new

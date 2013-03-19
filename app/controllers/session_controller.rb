@@ -1,7 +1,8 @@
 class SessionController < ApplicationController
   before_filter :authorize, :except => [:new, :create]
-  
+
   def new
+    
   end
 
   def create

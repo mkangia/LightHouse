@@ -22,8 +22,8 @@ LightHouse::Application.configure do
     port: 587,
     domain: "gmail.com",
     authentication: "plain",
-    user_name: "manish.kangia@vinsol.com" 
-    password: "manish24"
+    user_name: "manish.kangia@vinsol.com", 
+    password: "manish24",
     authentication: "plain",
     enable_starttls_auto: true
   }

@@ -16,8 +16,15 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <b><%= f.label :description %></b><br/>
+    <b><%= f.label :description %></b>
+    <a id = "attach_file_anchor">attach description</a><br/>
     <%= f.text_area :description %>
+  </div>
+  <div id = "upload_file">
+  <!--%= form_tag({:action => 'file_upload'},:multipart => true) do %-->
+    <label for="upload_file">Description File</label>
+    <%= f.file_field :description %><br/>
+  <!--% end %-->
   </div>
     <%= f.hidden_field :user_id, :value => @user.id %>
     <%= f.hidden_field :project_id, :value => @project.id %>
@@ -33,4 +40,6 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  
 <% end %>
+

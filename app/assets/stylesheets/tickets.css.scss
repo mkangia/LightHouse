@@ -48,3 +48,22 @@ h1 {
 	padding :0px;
 	margin : 0px;
 }
+#upload_file {
+    label {
+	margin-right : 34px;
+	
+	}
+	input[type="submit"] {
+	  margin-left :131px;
+	  width:86px;
+	}
+}
+#description_content {
+	pre,img {
+	  width : 400px;
+	  height : 200px;
+	  overflow:auto;
+	  background : none;
+	  font-size:16px;
+	}
+}

@@ -2,7 +2,16 @@
 <table id = "ticket_content">
   <h1><%= @ticket.title %></h1>
   <td class = "title"><b>Description</b></td>
-  <td><%= @ticket.description %></td>
+  <td id = "description_content"><% if @ticket.description.end_with?('jpg','png') %>
+      <%= image_tag("../#{@ticket.description}")%>
+      <% elsif @ticket.description.end_with?('txt') %>
+      <pre>
+      <%= render :file => "public/#{@ticket.description}"%>
+      </pre>
+      <% else %>
+      <%= @ticket.description %>
+      <% end %>
+  </td>
   </tr>
 <br/>
 <tr>
