@@ -22,7 +22,7 @@
   <div id = "edit_and_email">
     <% if @project.owner.id == session[:user_id] %>
    
-      <%= form_tag(send_emails_path, :method => :get) do %>
+      <%= form_tag(assign_projects_path, :method => :get) do %>
       
         <div id="invitations_div">
       	  <h2>Invite people via email<h2>

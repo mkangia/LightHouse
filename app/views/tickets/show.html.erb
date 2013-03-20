@@ -45,3 +45,4 @@
 
 
 <%= link_to 'Edit Ticket', { :controller => :tickets, :action => :edit, :project_id => @ticket.project_id } %>
+<%= link_to 'Remove', ticket_path(@ticket), :method => :delete %>

@@ -26,7 +26,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.new
     @project = Project.find(params[:project_id])
     @user = User.find(session[:user_id])
-    @can_assign_to = @project.users + [@project.owner] - [@user]
+    @can_assign_to = @project.users + [@project.owner]
     @states_for_ticket = State.find(:all, :conditions => ["project_id = ?" , @project.id ])
 
     respond_to do |format|
@@ -39,7 +39,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
     @user = User.find(session[:user_id])
     @project = Project.find(params[:project_id])
-    @can_assign_to = @project.users + [@project.owner] - [@user]
+    @can_assign_to = @project.users + [@project.owner]
     @states_for_ticket = @project.states
   end
 
@@ -63,12 +63,12 @@ class TicketsController < ApplicationController
     @project = Project.find(@ticket.project_id)
     @states_for_ticket = @project.states 
     @user_id = @ticket.user_id
+    
     if params[:ticket]["description"].class == ActionDispatch::Http::UploadedFile
-       logger.info("now inside if")
-       logger.info(params[:ticket][:description])
        DataFile.save(params[:ticket][:description])
        params[:ticket]["description"] = params[:ticket]["description"].original_filename
     end
+    
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
         @ticket.update_attributes(:user_id => @user_id)
@@ -84,15 +84,11 @@ class TicketsController < ApplicationController
   def destroy
     @ticket = Ticket.find(params[:id])
     @ticket.destroy
-
+    @user = User.find(session[:user_id])
     respond_to do |format|
-      format.html { redirect_to tickets_url }
+      format.html { redirect_to @user, notice: 'Ticket was successfully deleted' }
       format.json { head :no_content }
     end
   end
 
-  def file_upload(file_params)
-    @user = User.find(session[:user_id])
-    
-  end
 end

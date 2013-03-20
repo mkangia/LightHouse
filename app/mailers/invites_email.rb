@@ -1,11 +1,8 @@
 class InvitesEmail < ActionMailer::Base
-  def invites(user, email)
-  	@from = user
-     if @user = User.find_by_email(email)
-        mail :to => email, :from => user.email, :subject => "Invitation from #{user.name}"
-    else
-    	mail :to => email, :from => user.email, :subject => "Invitation to join in at LightHouse"
-    end
+  def invites(notify_by, notify_to)
+  	@from = notify_by
+  	@to = notify_to
+    mail :to => notify_to.email, :from => @from.email, :subject => "Invitation by #{@from.name} to join a project at LightHouse"
   end
 end
 

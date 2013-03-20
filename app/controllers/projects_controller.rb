@@ -78,19 +78,12 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def send_emails
+  def assign_projects
+    @project = Project.find(params[:id])
     invites_to = params[:emails].split(',')
     invites_to = invites_to.select { |email| email.match(/^[a-zA-z0-9]+[\w\.]*\w+@\w+\.[a-zA-Z]{2,3}$/i) }
-    invites_to.each do |invite|
-      InvitesEmail.invites(User.find(session[:user_id]), invite).deliver
-    end
-    assign_project(invites_to)
-    redirect_to user_path(session[:user_id])
-  end
-
-  def assign_project(emails)
-    @project = Project.find(params[:id])
-    emails.each do |email|
+    
+    invites_to.each do |email|
       if (user = User.find_by_email(email) )
         user.projects << @project 
         user.save
@@ -99,5 +92,7 @@ class ProjectsController < ApplicationController
         p.save 
       end
     end
+
+    redirect_to user_path(session[:user_id])
   end
 end

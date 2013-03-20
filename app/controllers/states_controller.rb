@@ -26,6 +26,7 @@ class StatesController < ApplicationController
       format.json { render json: @state }
     end
   end
+
   def edit
     @state = State.find(params[:id])
   end
