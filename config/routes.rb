@@ -17,7 +17,7 @@ LightHouse::Application.routes.draw do
   resources :tickets
   
   controller :projects do
-    get 'send_emails' => :send_emails
+    get 'assign_projects' => :assign_projects
   end
 
   root :to => 'session#new'
