@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
   
   before_filter :authorize, :except => [:new, :create]
-  
   def show
     @user = User.find(params[:id])
-    @projects_owned = [Project.find_by_user_id(@user.id)].flatten
-    @projects_assigned = [@user.projects].flatten
+    @projects_owned = Project.find(:all, :conditions => ["user_id = #{@user.id}"])
+    @projects_assigned = [@user.projects].flatten.uniq
     @tickets_assigned = @user.tickets
     @ticket_attributes = Ticket.attribute_names
     
@@ -44,9 +43,10 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-
+    
     respond_to do |format|
       if @user.update_attributes(params[:user])
+        expire_action :action => :edit
         session[:user_id] = nil
         format.html { redirect_to login_url }
         format.json { head :no_content }

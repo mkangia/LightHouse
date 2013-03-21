@@ -10,12 +10,15 @@ class Project < ActiveRecord::Base
   has_many :tickets
   has_many :states
 
+  after_create :add_default_states
+
   def self.search(search)
-    if search
-    	find(:all, :conditions => ['name like ?', "%#{search}%"])
-    else
-    	find(:all)
-    end
+    find(:all, :conditions => ['name like ?', "%#{search}%"])
   end
-  
+
+  def add_default_states
+    states << State.new( :project_id => id, :title => 'open' , :open => true )
+    states << State.new( :project_id => id, :title => 'close' , :open => false )
+  end
+    
 end

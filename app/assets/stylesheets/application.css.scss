@@ -11,7 +11,9 @@
  *= require_self
  *= require_tree .
  */
-
+.hide {
+  display:none; 
+}
 a{
   color:black;
   font-size:14px;

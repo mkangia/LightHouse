@@ -3,6 +3,7 @@
 	<% cache 'frag_cache' do %>
 	  <div id="content">
 		<div id= "left">
+		  <div class="hide"><%= Time.now %></div>
 		  <h1>Light and simple issue tracking system</h1>
 		  <p>Collaborate effortlessly on projects. Whether you’re a team of 5 or studio of 50, Lighthouse will help you keep track of your project development with ease.</p>
 		
@@ -14,10 +15,12 @@
 	    </div>
 
 		<div id= "right">
-	      <p>Lighthouse will simplify your workflow so you can do the job you were hired to do. <br><br>Try it for free.</p>
+	      <p>Lighthouse will simplify your workflow so you can do the job you were hired to do. <br><br>Try it for free.<br>
+	      	<%= link_to 'Learn more', about_path %></p>
+	      
 		</div>
 	  </div>
-	<%end%>
+	<% end %>
 	<div id = "form_div" >
 		<%= form_tag do %>
 		  <fieldset>

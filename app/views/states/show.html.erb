@@ -13,5 +13,5 @@
 	  	<li><%= link_to 'edit', edit_state_path(state) %></t><%= link_to 'remove', state_path(state), :method => :delete %></li>
 		<% end %>
 	<%end %>
-	<%= link_to 'new state', { :controller => :states, :action => :new, :project_id => @project.id} %>
+<%= link_to 'new state', { :controller => :states, :action => :new, :project_id => @project.id} %>
 </div>

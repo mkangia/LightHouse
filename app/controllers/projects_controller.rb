@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
   before_filter :authorize
-  
+
+  caches_action :all_projects, :layout => false
   def index
     @projects = Project.search(params[:search])
 
@@ -41,10 +42,10 @@ class ProjectsController < ApplicationController
     @project = Project.new(params[:project])
     @project.user_id = session[:user_id] 
     user = User.find(session[:user_id])
-    @project.states << State.new( :project_id => @project.id, :title => 'open' , :open => true )
-    @project.states << State.new( :project_id => @project.id, :title => 'close' , :open => false )
     respond_to do |format|
       if @project.save
+        expire_fragment('user_project_cache')
+        expire_action :action => :all_projects
         format.html { redirect_to user, notice: 'Project was successfully created.' }
         format.json { render json: @project, status: :created, location: @project }
       else
@@ -95,4 +96,9 @@ class ProjectsController < ApplicationController
 
     redirect_to user_path(session[:user_id])
   end
+
+  def all_projects
+    @projects = Project.all
+  end
+
 end

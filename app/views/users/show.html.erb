@@ -1,6 +1,8 @@
 
 <p id="notice"><%= notice %></p>
+<% cache 'user_project_cache' do %>
 <div id="display">
+  <div class="hide"><%= Time.now %></div>
   <% unless @projects_owned[0].nil? %>
     <h2>Projects Owned: </h2>
     <% @projects_owned.each do |project| %>
@@ -14,8 +16,8 @@
       <p><%= link_to "#{project.name}", project_path(project.id) %></p>
     <% end %>
   <%end%>
-
 </div>
+<% end %>
 <div id="links">
 	<%= button_to 'Create new project', new_project_path, :method => :get %> 
   <div id = "search_by_ticket">

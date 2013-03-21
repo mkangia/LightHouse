@@ -1,7 +1,6 @@
 class SessionController < ApplicationController
   before_filter :authorize, :except => [:new, :create]
   
-  caches_page :new
   def new
   end
 
@@ -16,6 +15,7 @@ class SessionController < ApplicationController
   end
 
   def destroy
+    expire_fragment('frag_cache');
   	session[:user_id] = nil
   	redirect_to login_path
   end

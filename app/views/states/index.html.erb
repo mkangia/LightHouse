@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div id = "states" >
+  <div class="hide"><%= Time.now %></div>
   <h1><%= @project.name %></h1>
 	<% unless @states[0].nil? %>
 		<table id="states_table">

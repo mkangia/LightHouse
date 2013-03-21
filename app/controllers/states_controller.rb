@@ -36,6 +36,7 @@ class StatesController < ApplicationController
     
     respond_to do |format|
       if @state.save
+        expire_action :action => :index
         format.html { redirect_to project_path(@state.project_id), notice: 'State was successfully created.' }
         format.json { render json: @state, status: :created, location: @state }
       else
