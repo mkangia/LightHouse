@@ -2,17 +2,18 @@ require 'test_helper'
 
 class StatesControllerTest < ActionController::TestCase
   setup do
+    session[:user_id] = 1
     @state = states(:one)
   end
 
   test "should get index" do
-    get :index
+    get :index, :project_id => 1
     assert_response :success
     assert_not_nil assigns(:states)
   end
 
   test "should get new" do
-    get :new
+    get :new, :project_id => 1
     assert_response :success
   end
 
@@ -21,29 +22,25 @@ class StatesControllerTest < ActionController::TestCase
       post :create, state: { open: @state.open, project_id: @state.project_id, title: @state.title }
     end
 
-    assert_redirected_to state_path(assigns(:state))
-  end
-
-  test "should show state" do
-    get :show, id: @state
-    assert_response :success
+    assert_redirected_to project_path(@state.project_id)
   end
 
   test "should get edit" do
-    get :edit, id: @state
+    get :edit, id: @state, :project_id => 1
     assert_response :success
   end
 
   test "should update state" do
     put :update, id: @state, state: { open: @state.open, project_id: @state.project_id, title: @state.title }
-    assert_redirected_to state_path(assigns(:state))
+    assert_redirected_to project_path(@state.project_id)
   end
 
   test "should destroy state" do
+    @request.env["HTTP_REFERER"] = states_path(:project_id => @state.project_id)
     assert_difference('State.count', -1) do
       delete :destroy, id: @state
     end
 
-    assert_redirected_to states_path
+    assert_redirected_to states_path(:project_id => @state.project_id)
   end
 end

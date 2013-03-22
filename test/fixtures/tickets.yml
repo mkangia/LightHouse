@@ -1,10 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 test_ticket:
+  id: 1
   title: MyString
   description: MyText
   user_id: 1
   project_id: 1
-  assigned_to: 2
-  state: false
+  assigned_to: 1
+  state: 1
 

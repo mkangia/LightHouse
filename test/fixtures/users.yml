@@ -3,7 +3,7 @@
 test_user1:
   id : 1
   name: puppy
-  email: MyString
+  email: MyString@google.com
   password_digest: MyString
 
 test_user2:

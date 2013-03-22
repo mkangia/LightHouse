@@ -2,7 +2,8 @@ require 'test_helper'
 
 class ProjectsControllerTest < ActionController::TestCase
   setup do
-    @project = projects(:one)
+    session[:user_id] = 1
+    @project = projects(:test_project)
   end
 
   test "should get index" do
@@ -18,10 +19,10 @@ class ProjectsControllerTest < ActionController::TestCase
 
   test "should create project" do
     assert_difference('Project.count') do
-      post :create, project: { description: @project.description, name: @project.name, owner_id: @project.owner_id }
+      post :create, project: { description: @project.description, name: @project.name, user_id: @project.user_id }
     end
 
-    assert_redirected_to project_path(assigns(:project))
+    assert_redirected_to user_path(session[:user_id])
   end
 
   test "should show project" do
@@ -35,7 +36,7 @@ class ProjectsControllerTest < ActionController::TestCase
   end
 
   test "should update project" do
-    put :update, id: @project, project: { description: @project.description, name: @project.name, owner_id: @project.owner_id }
+    put :update, id: @project, project: { description: @project.description, name: @project.name, user_id: @project.user_id }
     assert_redirected_to project_path(assigns(:project))
   end
 
@@ -44,6 +45,6 @@ class ProjectsControllerTest < ActionController::TestCase
       delete :destroy, id: @project
     end
 
-    assert_redirected_to projects_path
+    assert_redirected_to users_path(session[:user_id])
   end
 end
