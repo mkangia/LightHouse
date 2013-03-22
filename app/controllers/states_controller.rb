@@ -1,14 +1,7 @@
 class StatesController < ApplicationController
   
-  def show
-    @states = State.where(:project_id => (params[:project_id]))
-    @project = Project.find(params[:project_id])
-    respond_to do |format|
-      format.html
-      format.json { render json: @state }
-    end
-  end
-
+  before_filter :authorize
+  
   def new
     @state = State.new
     

@@ -1,5 +1,6 @@
 class TicketsController < ApplicationController
-
+  
+  before_filter :authorize
   def index
     @tickets = Ticket.search(params[:search_ticket], params[:search_by])
     
