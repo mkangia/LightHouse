@@ -1,0 +1,11 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1363858304.1471045:@value"“I"‡<div id="display">
+  <div class="hide">2013-03-21 15:01:44 +0530</div>
+    <h2>Projects Owned: </h2>
+      <p><a href="/projects/22">Vinsol App</a></p>
+      <p><a href="/projects/24">another_project</a></p>
+      <p><a href="/projects/27">test_states_creation</a></p>
+      <p><a href="/projects/28">test_cache_project</a></p>
+      <p><a href="/projects/29">expire_cache</a></p>
+  
+</div>
+:ET

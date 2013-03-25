@@ -18,9 +18,12 @@ LightHouse::Application.routes.draw do
   
   controller :projects do
     get 'assign_projects' => :assign_projects
+    get 'lighthouse/all' => :all_projects
   end
 
   root :to => 'session#new'
+
+  match 'about' => 'static#about'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

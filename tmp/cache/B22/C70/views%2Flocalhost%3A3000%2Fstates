@@ -1,0 +1,107 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1363861073.5911613:@value"^I"R<!DOCTYPE html>
+<html>
+<head>
+  <title>LightHouse</title>
+  <link href="/assets/application.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/projects.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/projects_users.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/scaffolds.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/session.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/states.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/static.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/tickets.css?body=1" media="all" rel="stylesheet" type="text/css" />
+<link href="/assets/users.css?body=1" media="all" rel="stylesheet" type="text/css" />
+  <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/projects.js?body=1" type="text/javascript"></script>
+<script src="/assets/projects_users.js?body=1" type="text/javascript"></script>
+<script src="/assets/session.js?body=1" type="text/javascript"></script>
+<script src="/assets/tickets.js?body=1" type="text/javascript"></script>
+<script src="/assets/users.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="wdowuLkaivx6XCSla/ZXecZzj+CFBlgEcPQ6T+rYhQU=" name="csrf-token" />
+</head>
+<body>
+  <div id= "top_bar">
+  <img alt="Logo" src="/assets/logo.png" />
+
+  <div id="banner">
+    Lighthouse<p><b>Issue tracking simplified</b></p>
+  </div>
+
+
+    <div id= "logout">
+      <label id="useremail">contact.manishkangia@gmail.com</label>
+      <div id = "header_links" >
+        <a href="/users/4/edit">Account</a>
+        <a href="/users/4">Home</a>
+        <a href="/logout" data-method="delete" rel="nofollow">Logout</a>
+      </div>
+    </div>
+
+    <div id = "search_by_project">
+      <form accept-charset="UTF-8" action="/projects" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <p>
+          <input id="search" name="search" type="text" />
+          <input type="submit" value="Project" />
+        </p>
+</form>    </div>
+  </div>
+
+<div id = "main">
+  <p id="notice"></p>
+<div id = "states" >
+  <div class="hide">2013-03-21 15:47:53 +0530</div>
+  <h1>Vinsol App</h1>
+		<table id="states_table">
+			<tr>
+				<td><b>Title</b></td>
+				<td><b>Open</b></td>
+				<td><b>Action</b></td>
+			</tr>
+			
+			<br/>
+		  <tr>
+		  	<td>open</td>
+		  	<td>true</td>
+		  	<td><a href="/states/13/edit">edit</a></t><a href="/states/13" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+<br/>
+		  <tr>
+		  	<td>close</td>
+		  	<td>false</td>
+		  	<td><a href="/states/14/edit">edit</a></t><a href="/states/14" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+<br/>
+		  <tr>
+		  	<td>assigned</td>
+		  	<td>true</td>
+		  	<td><a href="/states/15/edit">edit</a></t><a href="/states/15" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+<br/>
+		  <tr>
+		  	<td>approved</td>
+		  	<td>false</td>
+		  	<td><a href="/states/16/edit">edit</a></t><a href="/states/16" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+<br/>
+		  <tr>
+		  	<td>test_state</td>
+		  	<td>true</td>
+		  	<td><a href="/states/17/edit">edit</a></t><a href="/states/17" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+<br/>
+		  <tr>
+		  	<td>test_state_update</td>
+		  	<td>true</td>
+		  	<td><a href="/states/18/edit">edit</a></t><a href="/states/18" data-method="delete" rel="nofollow">remove</a></td>
+			</tr>
+		  
+	  </table>
+	<a href="/states/new?project_id=22">add state</a>
+</div>
+</div>
+
+</body>
+</html>:EF

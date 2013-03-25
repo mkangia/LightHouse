@@ -1,0 +1,20 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364204385.9903476:@value":I".	  <div id="content">
+		<div id= "left">
+		  <div class="hide">2013-03-25 15:09:45 +0530</div>
+		  <h1>Light and simple issue tracking system</h1>
+		  <p>Collaborate effortlessly on projects. Whether you’re a team of 5 or studio of 50, Lighthouse will help you keep track of your project development with ease.</p>
+		
+		  <h1>More fun, More functions</h1>
+		  <p>Cut the fat out of your workflow and stay focused on what’s important.</p>
+
+		  <h1>Consolidate your projects</h1>
+		  <p>You can see the status of all your projects in a simple overview and follow along with feeds.</p> 
+	    </div>
+
+		<div id= "right">
+	      <p>Lighthouse will simplify your workflow so you can do the job you were hired to do. <br><br>Try it for free.<br>
+	      	<a href="/about">Learn more</a></p>
+	      
+		</div>
+	  </div>
+:ET

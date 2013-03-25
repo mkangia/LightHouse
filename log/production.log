@@ -1,0 +1,200 @@
+Compiled jquery.js  (1ms)  (pid 6087)
+Compiled jquery_ujs.js  (0ms)  (pid 6087)
+Compiled projects.js  (474ms)  (pid 6087)
+Compiled projects_users.js  (108ms)  (pid 6087)
+Compiled session.js  (0ms)  (pid 6087)
+Compiled tickets.js  (0ms)  (pid 6087)
+Compiled users.js  (0ms)  (pid 6087)
+Compiled application.js  (669ms)  (pid 6087)
+Compiled projects.css  (12ms)  (pid 6087)
+Compiled projects_users.css  (1ms)  (pid 6087)
+Compiled scaffolds.css  (8ms)  (pid 6087)
+Compiled session.css  (8ms)  (pid 6087)
+Compiled states.css  (4ms)  (pid 6087)
+Compiled tickets.css  (9ms)  (pid 6087)
+Compiled users.css  (7ms)  (pid 6087)
+Compiled application.css  (192ms)  (pid 6087)
+Compiled jquery.js  (1ms)  (pid 6087)
+Compiled jquery_ujs.js  (0ms)  (pid 6087)
+Compiled projects.js  (145ms)  (pid 6087)
+Compiled projects_users.js  (111ms)  (pid 6087)
+Compiled session.js  (0ms)  (pid 6087)
+Compiled tickets.js  (0ms)  (pid 6087)
+Compiled users.js  (0ms)  (pid 6087)
+Compiled application.js  (346ms)  (pid 6087)
+Compiled projects.css  (12ms)  (pid 6087)
+Compiled projects_users.css  (1ms)  (pid 6087)
+Compiled scaffolds.css  (8ms)  (pid 6087)
+Compiled session.css  (8ms)  (pid 6087)
+Compiled states.css  (4ms)  (pid 6087)
+Compiled tickets.css  (9ms)  (pid 6087)
+Compiled users.css  (7ms)  (pid 6087)
+Compiled application.css  (114ms)  (pid 6087)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-19 21:43:49 +0530
+Processing by SessionController#new as HTML
+  Rendered session/new.html.erb within layouts/application (34.6ms)
+Write page /home/shubham/LightHouse/public/index.html (0.3ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/assets/application-fe411e20a12d519fa49c42e53b66dd54.css" for 127.0.0.1 at 2013-03-19 21:43:49 +0530
+
+ActionController::RoutingError (No route matches [GET] "/assets/application-fe411e20a12d519fa49c42e53b66dd54.css"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Started GET "/assets/application-4e03028e6e423b30a6d8d5805a500d62.js" for 127.0.0.1 at 2013-03-19 21:43:49 +0530
+
+ActionController::RoutingError (No route matches [GET] "/assets/application-4e03028e6e423b30a6d8d5805a500d62.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Started GET "/assets/logo-f8f382f65b726cfbbc7796605446152a.png" for 127.0.0.1 at 2013-03-19 21:43:49 +0530
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo-f8f382f65b726cfbbc7796605446152a.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Started GET "/assets/application-4e03028e6e423b30a6d8d5805a500d62.js" for 127.0.0.1 at 2013-03-19 21:44:11 +0530
+
+ActionController::RoutingError (No route matches [GET] "/assets/application-4e03028e6e423b30a6d8d5805a500d62.js"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/shubham/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Compiled jquery.js  (1ms)  (pid 6932)
+Compiled jquery_ujs.js  (0ms)  (pid 6932)
+Compiled projects.js  (141ms)  (pid 6932)
+Compiled projects_users.js  (108ms)  (pid 6932)
+Compiled session.js  (0ms)  (pid 6932)
+Compiled tickets.js  (0ms)  (pid 6932)
+Compiled users.js  (0ms)  (pid 6932)
+Compiled application.js  (341ms)  (pid 6932)
+Compiled projects.css  (12ms)  (pid 6932)
+Compiled projects_users.css  (1ms)  (pid 6932)
+Compiled scaffolds.css  (8ms)  (pid 6932)
+Compiled session.css  (8ms)  (pid 6932)
+Compiled states.css  (4ms)  (pid 6932)
+Compiled tickets.css  (9ms)  (pid 6932)
+Compiled users.css  (7ms)  (pid 6932)
+Compiled application.css  (116ms)  (pid 6932)
+Compiled jquery.js  (1ms)  (pid 6932)
+Compiled jquery_ujs.js  (0ms)  (pid 6932)
+Compiled projects.js  (139ms)  (pid 6932)
+Compiled projects_users.js  (110ms)  (pid 6932)
+Compiled session.js  (0ms)  (pid 6932)
+Compiled tickets.js  (0ms)  (pid 6932)
+Compiled users.js  (0ms)  (pid 6932)
+Compiled application.js  (309ms)  (pid 6932)
+Compiled projects.css  (11ms)  (pid 6932)
+Compiled projects_users.css  (1ms)  (pid 6932)
+Compiled scaffolds.css  (8ms)  (pid 6932)
+Compiled session.css  (8ms)  (pid 6932)
+Compiled states.css  (4ms)  (pid 6932)
+Compiled tickets.css  (9ms)  (pid 6932)
+Compiled users.css  (8ms)  (pid 6932)
+Compiled application.css  (114ms)  (pid 6932)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-03-19 21:48:19 +0530
+Processing by SessionController#new as HTML
+  Rendered session/new.html.erb within layouts/application (33.5ms)
+Write page /home/shubham/LightHouse/public/index.html (0.3ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/assets/application-fe411e20a12d519fa49c42e53b66dd54.css" for 127.0.0.1 at 2013-03-19 21:48:19 +0530
+Served asset /application-fe411e20a12d519fa49c42e53b66dd54.css - 200 OK (15ms)
+Started GET "/assets/application-4e03028e6e423b30a6d8d5805a500d62.js" for 127.0.0.1 at 2013-03-19 21:48:19 +0530
+Served asset /application-4e03028e6e423b30a6d8d5805a500d62.js - 200 OK (11ms)
+Started GET "/assets/logo-f8f382f65b726cfbbc7796605446152a.png" for 127.0.0.1 at 2013-03-19 21:48:19 +0530
+Served asset /logo-f8f382f65b726cfbbc7796605446152a.png - 200 OK (1ms)
+Started GET "/assets/wood.jpg" for 127.0.0.1 at 2013-03-19 21:48:19 +0530
+Served asset /wood.jpg - 200 OK (4ms)
