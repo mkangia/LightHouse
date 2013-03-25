@@ -24,7 +24,7 @@
     <%= form_tag tickets_path, :method => 'get' do %>
       <p>
         <%= text_field_tag :search_ticket, params[:search_ticket] %>
-        <%= select_tag :search_by, "<option>all</all><option>title</option><option>description</option>><option>project</option>".html_safe %>
+        <%= select_tag :search_by, "<option>all</option><option>title</option><option>description</option>><option>project</option>".html_safe %>
         <%= submit_tag "Search Tickets", :name => nil %>
       </p>
     <% end %>
@@ -34,9 +34,10 @@
   <% if @tickets_assigned %>
     <h2>Tickets assigned to you</h2>
     <ul class="tickets_assigned">
-    <% @tickets_assigned.each do |ticket| %>
-    <li><%= link_to ticket.title, ticket_path(ticket.id) %></li>
-    <% end %>
+      <% @tickets_assigned.each do |ticket| %>
+        <li><%= link_to ticket.title, ticket_path(ticket.id) %></li>
+      <% end %>
+    </ul>
   <% end %>
   </div>
   

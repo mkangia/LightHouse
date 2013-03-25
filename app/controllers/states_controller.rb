@@ -4,7 +4,7 @@ class StatesController < ApplicationController
   
   def new
     @state = State.new
-    
+    @project = Project.find(params[:project_id])
     respond_to do |format|
       format.html
       format.json { render json: @state }
@@ -22,11 +22,12 @@ class StatesController < ApplicationController
 
   def edit
     @state = State.find(params[:id])
+    @project = Project.find(@state.project_id)
   end
 
   def create
     @state = State.new(params[:state])
-    
+    @project = Project.find(@state.project_id)
     respond_to do |format|
       if @state.save
         expire_action :action => :index

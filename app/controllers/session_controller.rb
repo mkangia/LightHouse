@@ -2,6 +2,7 @@ class SessionController < ApplicationController
   before_filter :authorize, :except => [:new, :create]
   
   def new
+    session[:user_id] = nil
   end
 
   def create

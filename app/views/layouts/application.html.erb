@@ -19,9 +19,9 @@
     <div id= "logout">
       <label id="useremail"><%= User.find(session[:user_id]).email %></label>
       <div id = "header_links" >
-        <%= link_to 'Account', edit_user_path(session[:user_id]) %>
-        <%= link_to 'Home' , user_path(session[:user_id]) %>
-        <%= link_to 'Logout', logout_path, :method => :delete %>
+        <%= link_to 'Account', edit_user_path(session[:user_id]), :id => "Account_link" %>
+        <%= link_to 'Home' , user_path(session[:user_id]), :id => "Home_link" %>
+        <%= link_to 'Logout', logout_path, :method => :delete, :id => "Logout_link" %>
       </div>
     </div>
 
@@ -29,7 +29,7 @@
       <%= form_tag projects_path, :method => 'get' do %>
         <p>
           <%= text_field_tag :search, params[:search] %>
-          <%= submit_tag "Project", :name => nil %>
+          <%= submit_tag "Project", :name => nil, :id => "Project" %>
         </p>
       <% end %>
     </div>
