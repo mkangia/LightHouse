@@ -39,13 +39,8 @@ describe UsersController do
     		response.body.should have_selector "#search_by_ticket form", :count => 1
 		  end
 
-		  it "displays link to the projects owned by the user" do 
-				@projects = @user.projects
-				@projects.each { |project| response.body.should have_selector 'a', :text => project.name }
-		  end
-
 		  it "displays link to all projects assigned to the user" do
-		  	@user.projects.each { |project| response.body.should have_selector 'a', project.name }
+		  	@user.projects.each { |project| response.body.should have_selector 'a', :text => project.name }
 		  end
 
 		  it "displays link to all the tickets assigned to the user" do 
