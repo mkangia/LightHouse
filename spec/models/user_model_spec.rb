@@ -44,6 +44,11 @@ describe User do
 			@user.should be_invalid
 			@user.save.should be_false
 		end
+
+    it "availability of email to avoid duplication of email-id/user" do
+      @new_user = User.new( :name => "newuser", :password_digest => "newuser" , :email => "#{@user.email}" )
+      @new_user.save.should be_false
+    end
 	end
 
 	describe "associates each user object with" do
