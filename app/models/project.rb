@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
   attr_accessible :description, :name, :user_id
 
-  validates :name, :presence => true
+  validates :name, :user_id, :presence => true
 
   belongs_to :owner, :class_name => "User", :foreign_key => "user_id"
   
