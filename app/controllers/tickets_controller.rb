@@ -14,8 +14,14 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
     @project = Project.find(@ticket.project_id)
     @creator = User.find(@ticket.creator)
-    @assigned_to = User.find(@ticket.assigned_to)
-    @state = State.find(@ticket.state)
+    
+    @assigned_to = begin 
+      User.find(@ticket.assigned_to)
+      rescue ActiveRecord::RecordNotFound
+      @creator
+    end
+
+    @state = State.find(@ticket.state)    
     
     respond_to do |format|
       format.html 

@@ -16,7 +16,7 @@ class SessionController < ApplicationController
   end
 
   def destroy
-    expire_fragment('frag_cache');
+    expire_fragment( 'user_project_cache' );
   	session[:user_id] = nil
   	redirect_to login_path
   end

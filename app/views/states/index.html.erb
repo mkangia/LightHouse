@@ -14,7 +14,7 @@
 		  <tr>
 		  	<td><%= state.title %></td>
 		  	<td><%= state.open %></td>
-		  	<td><%= link_to 'edit', edit_state_path(state) %></t><%= link_to 'remove', state_path(state), :method => :delete %></td>
+		  	<td><%= link_to 'edit', edit_state_path(state) %></t><%= link_to 'remove', state_path(state), :method => :delete, :class => "delete_state" %></td>
 			</tr>
 			<% end %>
 

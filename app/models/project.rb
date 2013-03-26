@@ -7,8 +7,8 @@ class Project < ActiveRecord::Base
   
   has_many :projects_users
   has_many :users, :through => :projects_users
-  has_many :tickets
-  has_many :states
+  has_many :tickets, :dependent => :destroy
+  has_many :states, :dependent => :destroy
 
   after_create :add_default_states
 

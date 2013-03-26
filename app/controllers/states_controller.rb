@@ -56,10 +56,10 @@ class StatesController < ApplicationController
 
   def destroy
     @state = State.find(params[:id])
-    @state.destroy
+    @notice = @state.destroy ? "successfully deleted" : "There are associated tickets with this state"
     
     respond_to do |format|
-      format.html { redirect_to :back }
+      format.html { redirect_to :back, notice: @notice }
       format.json { head :no_content }
     end
   end
