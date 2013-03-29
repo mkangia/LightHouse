@@ -8,6 +8,7 @@
     <th>Created By</th>
     <th>Assigned To</th>
     <th>Current State</th>
+    <th>Tags</th>
   </tr>
 
 <% @tickets.each do |ticket| %>
@@ -26,7 +27,8 @@
     </td>
     <td><%= ticket.creator.name %></td>
     <td><%= User.find(ticket.assigned_to).name %></td>
-    <td><%= State.find(ticket.state).title %>
+    <td><%= State.find(ticket.state).title %></td>
+    <td><%= ticket.tag_list %></td>
   </tr>
 <% end %>
 </table>

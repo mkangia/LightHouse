@@ -37,6 +37,10 @@
     <b><%= f.label :state, "State" %></b>
     <%= collection_select(:ticket, :state,@states_for_ticket, :id, :title, {:prompt => "ticket state"}) %>
   </div>
+  <div class="field">
+    <%= f.label :tag_list, "Tags (separated by commas)" %><br />
+    <%= f.text_field :tag_list %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

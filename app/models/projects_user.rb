@@ -8,6 +8,6 @@ class ProjectsUser < ActiveRecord::Base
 
   def notify_user
     notify_to = user
-    InvitesEmail.invites(project.owner, notify_to).deliver
+    InvitesEmail.delay.invites(project.owner, notify_to)
   end	
 end

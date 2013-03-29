@@ -41,6 +41,13 @@
   <td class = "content"><%= (@state.title) %>(<%= (@state.open ? 'open' : 'close') %>)
 </td>
   </tr>
+
+<tr>
+  <td class = "title">
+  <b>Tags</b></td>
+  <td class = "content"><%= @ticket.tag_list %>
+</td>
+  </tr>
 </table>
 
 

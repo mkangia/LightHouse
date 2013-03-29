@@ -1,5 +1,7 @@
 class Ticket < ActiveRecord::Base
-  attr_accessible :assigned_to, :description, :project_id, :state, :title, :user_id
+  attr_accessible :assigned_to, :description, :project_id, :state, :title, :user_id, :tag_list
+
+  acts_as_taggable
 
   validates :title, :user_id, :project_id, :presence => true
 
@@ -12,6 +14,8 @@ class Ticket < ActiveRecord::Base
       elsif search_by == "project"
         @project = Project.where(:name => search)[0]
         @project ? find(:all, :conditions => ["project_id = ?", @project.id]) : []
+      elsif search_by == "tags"
+        Ticket.tagged_with(search)
       elsif search_by
         find(:all, :condition => ["#{search_by} like ?", "#{search}"])
       else
