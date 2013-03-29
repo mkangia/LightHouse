@@ -8,6 +8,9 @@ gem 'rails', '3.2.11'
 gem 'mysql2'
 gem 'mysql'
 gem 'yaml_db'
+gem 'httparty'
+gem "delayed_job", "~> 3.0.4"
+gem "delayed_job_active_record"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -43,3 +46,4 @@ gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 
 # To use debugger
  gem 'debugger'
+ gem 'acts-as-taggable-on'

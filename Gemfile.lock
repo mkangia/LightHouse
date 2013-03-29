@@ -28,6 +28,8 @@ GEM
     activesupport (3.2.11)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts-as-taggable-on (2.3.3)
+      rails (~> 3.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
@@ -54,12 +56,20 @@ GEM
       debugger-ruby_core_source (~> 1.2.0)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.0)
+    delayed_job (3.0.5)
+      activesupport (~> 3.0)
+    delayed_job_active_record (0.4.3)
+      activerecord (>= 2.1.0, < 4)
+      delayed_job (~> 3.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.4.0)
     hike (1.2.1)
+    httparty (0.10.2)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.4)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -72,6 +82,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.6.1)
+    multi_xml (0.5.3)
     mysql (2.9.1)
     mysql2 (0.3.11)
     nokogiri (1.5.6)
@@ -157,10 +168,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on
   bcrypt-ruby (~> 3.0.0)
   capybara (= 1.1.2)
   coffee-rails (~> 3.2.1)
   debugger
+  delayed_job (~> 3.0.4)
+  delayed_job_active_record
+  httparty
   jquery-rails
   mysql
   mysql2
