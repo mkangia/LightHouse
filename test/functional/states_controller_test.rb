@@ -35,7 +35,18 @@ class StatesControllerTest < ActionController::TestCase
     assert_redirected_to project_path(@state.project_id)
   end
 
-  test "should destroy state" do
+  test "should not destroy state if there is an associated ticket with it" do
+    @request.env["HTTP_REFERER"] = states_path(:project_id => @state.project_id)
+    assert_difference('State.count', 0) do
+      delete :destroy, id: @state
+    end
+
+    assert_redirected_to states_path(:project_id => @state.project_id)
+  end
+
+
+  test "should destroy state if there is no associated ticket with it" do
+    @state = states(:two)
     @request.env["HTTP_REFERER"] = states_path(:project_id => @state.project_id)
     assert_difference('State.count', -1) do
       delete :destroy, id: @state
@@ -43,4 +54,5 @@ class StatesControllerTest < ActionController::TestCase
 
     assert_redirected_to states_path(:project_id => @state.project_id)
   end
+
 end

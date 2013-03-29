@@ -12,7 +12,7 @@ class ProjectTest < ActiveSupport::TestCase
   end
 
   test "project can be without description" do
-  	project = Project.new(:name => "test_project")
+  	project = Project.new(:name => "test_project", :user_id => 1)
   	assert_equal project.errors[:description].any?, false
   	assert_equal project.invalid?, false
   end
