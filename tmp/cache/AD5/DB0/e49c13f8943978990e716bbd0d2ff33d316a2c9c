@@ -1,4 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1363938115.6495254:@value"›[I"Ž$(document).ready(function() {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364545879.9058204:@value"›[I"Ž$(document).ready(function() {
 	$('#name').focus();
 	$('body').css('background-image','url(/assets/wood.jpg)');
 	$('#user_name').focus();

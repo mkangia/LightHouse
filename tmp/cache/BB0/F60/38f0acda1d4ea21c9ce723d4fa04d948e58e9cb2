@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364545805.3961215:@value"[I"õ$(document).ready(function() {
+	$('#name').focus();
+	$('body').css('background-image','url(/assets/wood.jpg)');
+	$('#user_name').focus();
+	$('#translate').click( function() {
+		$('#form_div .password_div label').css("margin-left",'0px')
+	})
+});
+:EF
