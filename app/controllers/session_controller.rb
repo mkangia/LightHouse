@@ -1,7 +1,9 @@
 class SessionController < ApplicationController
   before_filter :authorize, :except => [:new, :create]
   
-  def new
+  def new()
+    I18n.locale = 'hin' if params[:translate]
+    Rails.logger.info "Set locale to #{I18n.locale} when translate was #{translate}"
     session[:user_id] = nil
   end
 

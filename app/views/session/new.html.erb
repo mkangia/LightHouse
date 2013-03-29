@@ -1,5 +1,4 @@
-<div id="front_page">
-	
+<div id="front_page">	
 	<% cache 'frag_cache' do %>
 	  <div id="content">
 		<div id= "left">
@@ -21,25 +20,30 @@
 		</div>
 	  </div>
 	<% end %>
+	<div id="translate">
+  	  <%= link_to "#{ t 'translate' }", login_path(:translate => true) %>
+	</div>
+	
 	<div id = "form_div" >
+
 		<%= form_tag do %>
 		  <fieldset>
 		    <legend>
-		      Please Log In
+		      <%= t('log-in') %>
 		    </legend>
 
 		    <div class = "username_div" >
-		    	<%= label_tag :name, "Username:" %>
+		    	<%= label_tag :name, "#{t('username')}:" %>
 		    	<%= text_field_tag :name, params[:name] %>
 		    </div>
 
 		    <div class = "password_div" >
-		    	<%= label_tag :password, "Pass:" %>
+		    	<%= label_tag :password, "#{t('password')}:" %>
 		    	<%= password_field_tag :password, params[:password] %>
 		    </div>
 
 		    <div class = "submit_div">
-		    	<%= submit_tag 'LogIn' %>
+		    	<%= submit_tag "#{ t('enter') }" %>
 		    </div>
 		  </fieldset>
 		<% end %>
