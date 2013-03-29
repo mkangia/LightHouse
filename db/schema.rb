@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130308121549) do
+ActiveRecord::Schema.define(:version => 20130329053349) do
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
+
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "projects", :force => true do |t|
     t.string   "name"
@@ -37,13 +52,30 @@ ActiveRecord::Schema.define(:version => 20130308121549) do
     t.datetime "updated_at",                   :null => false
   end
 
+  create_table "taggings", :force => true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "context",       :limit => 128
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], :name => "index_taggings_on_tag_id"
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], :name => "index_taggings_on_taggable_id_and_taggable_type_and_context"
+
+  create_table "tags", :force => true do |t|
+    t.string "name"
+  end
+
   create_table "tickets", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.integer  "user_id"
     t.integer  "project_id"
     t.integer  "assigned_to"
-    t.boolean  "state"
+    t.integer  "state"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
