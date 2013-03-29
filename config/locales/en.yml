@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  search: "Search"
+  log-in: "Please Log-in"
+  username: "Username"
+  password: "pass"
+  translate: "translate"
+  enter: "Enter"
