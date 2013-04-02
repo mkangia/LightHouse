@@ -17,16 +17,18 @@ LightHouse::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.smtp_settings = {
+   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
     domain: "gmail.com",
     authentication: "plain",
-    user_name: "", 
+    user_name: "contact.manishkangia@gmail.com", 
     password: "",
     authentication: "plain",
-    enable_starttls_auto: true
+    enable_starttls_auto: true,
+    :openssl_verify_mode => OpenSSL::SSL::VERIFY_NONE
   }
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

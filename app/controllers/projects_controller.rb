@@ -81,20 +81,18 @@ class ProjectsController < ApplicationController
 
   def assign_projects
     @project = Project.find(params[:id])
-    InvitesEmail.delay.invites(@project.owner, User.find(session[:user_id]))
-
-    # invites_to = params[:emails].split(',')
-    # invites_to = invites_to.select { |email| email.match(/^[a-zA-z0-9]+[\w\.]*\w+@\w+\.[a-zA-Z]{2,3}$/i) }
+    invites_to = params[:emails].split(',')
+    invites_to = invites_to.select { |email| email.match(/^[a-zA-z0-9]+[\w\.]*\w+@\w+\.[a-zA-Z]{2,3}$/i) }
     
-    # invites_to.each do |email|
-    #   if (user = User.find_by_email(email) )
-    #     user.projects << @project 
-    #     user.save
-    #     p = ProjectsUser.find(:first,:conditions => ["user_id = ? AND project_id = ?",user.id, @project.id])
-    #     p.admin = params[:admin_role] || 0
-    #     p.save 
-    #   end
-    # end
+    invites_to.each do |email|
+      if (user = User.find_by_email(email) )
+        user.projects << @project 
+        user.save
+        p = ProjectsUser.find(:first,:conditions => ["user_id = ? AND project_id = ?",user.id, @project.id])
+        p.admin = params[:admin_role] || 0
+        p.save 
+      end
+    end
 
     redirect_to user_path(session[:user_id])
   end
