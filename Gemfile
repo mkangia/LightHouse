@@ -47,3 +47,4 @@ gem 'bcrypt-ruby', '~> 3.0.0', :require => "bcrypt"
 # To use debugger
  gem 'debugger'
  gem 'acts-as-taggable-on'
+ gem 'daemons'
