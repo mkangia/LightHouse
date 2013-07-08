@@ -1,0 +1,13 @@
+function user(name, age){
+  this.name = name;
+  this.age = age;
+  this.compare = function(user2){ 
+    if(user2.age > this.age){
+      alert(user2.name + ' is older than ' + name)
+    } else if(user2.age < this.age) {
+      alert(name + ' is older than ' + user2.name)
+    } else {
+      alert('both are of same age')
+    } 
+  }
+};
